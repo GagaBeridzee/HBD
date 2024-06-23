@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
 html {
   height: 100%;
 }
@@ -8,6 +9,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+b {
+  color: #00ff41;
 }
 
 .swiper {
@@ -18,12 +24,44 @@ body {
 }
 .swiper .swiper-wrapper .swiper-slide {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100%;
+  gap: 3rem;
 }
-
-b {
-  color: #00ff41;
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 280px;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.swiper .swiper-wrapper .swiper-slide .text-content {
+  text-align: center;
+}
+.swiper .swiper-wrapper .swiper-slide .text-content.al {
+  text-align: left;
+}
+.swiper .swiper-wrapper .swiper-slide .text-content p {
+  margin: 0;
+  color: #d7d7d9;
+  font-weight: 700;
+}
+.swiper .swiper-wrapper .swiper-slide .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.swiper .swiper-wrapper .swiper-slide .footer a,
+.swiper .swiper-wrapper .swiper-slide .footer button {
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 999px;
+  border-color: #d7d7d9;
+  background-color: #d7d7d9;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none !important;
 }/*# sourceMappingURL=main.css.map */
