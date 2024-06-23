@@ -1,13 +1,33 @@
 doctype html
-html(lang="ka")
+html(lang="en")
     head
         //- content
         include ./layouts/head.pug
 
-    body 
-        //- Start button
-        
+    body.container
+        //- start
+        .swiper.steps
+            .swiper-wrapper
+
+                //- 1
+                .swiper-slide
+                    .text-content 
+                        p აბა, რას იტყვი, მზად ხარ 
+                            b &nbsp;ძმიშვილო?!
+                    .footer
+                        button.btn.btn-primary(type="button") მზად ვარ!
+
+                .swiper-slide
+                .swiper-slide
+                .swiper-slide
+                .swiper-slide
+                .swiper-slide
+                .swiper-slide
+                .swiper-slide
+                .swiper-slide
+            .swiper-button-next.d-none
+            .swiper-button-prev.d-none
 
 
-        //- Scripts
-        include ./layouts/script.pug
+    //- script
+    include ./layouts/script.pug

@@ -1,0 +1,38 @@
+$text-primary: #d7d7d9;
+$text-secondary: #616165;
+$bg-primary: #000;
+$bg-secondary: #111;
+$border: 1px solid #424245;
+$green: #00ff41;
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: $bg-primary;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    height: 100%;
+
+    .swiper-wrapper{
+        height: 100%;
+
+        .swiper-slide{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+}
+
+b{
+    color: $green;
+}
